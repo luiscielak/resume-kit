@@ -78,7 +78,8 @@ resume-kit/
 ├── prompts/         the three prompts, explained below
 ├── applications/    one folder per job you tailor to, your output lands here
 ├── examples/        a finished tailor to compare your result against
-└── scripts/         render-pdf.js turns an HTML file into a PDF
+├── scripts/         render-pdf.js turns an HTML file into a PDF
+└── slides.html      the workshop deck (open it in a browser)
 ```
 
 You edit `resume/base.md` and `resume/base.html` once, to make them yours. After that you only add files under `jobs/` and `applications/`. The prompts and the script stay put.

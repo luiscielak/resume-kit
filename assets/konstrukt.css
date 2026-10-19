@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap');
+
+/**
+ * Konstrukt Design System — generated tokens. DO NOT EDIT BY HAND.
+ * Source: apps/konstrukt/tokens/*.json — run `npm run build`.
+ *
+ * Aesthetic: Bauhaus / Swiss International Typographic Style.
+ * Two orthogonal axes on <html>:
+ *   data-palette : atelier | courage | minimal | hl | blueprint
+ *                  (legacy alias `sqdl` rendered the same as `hl`)
+ *   data-mode    : light | dark   (legacy alias [data-theme="dark"])
+ */
+
+:root {
+  color-scheme: light dark;
+  --font-sans: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "SF Mono", "Fira Code", "Consolas", monospace;
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+  --radius: 0px;
+  --transition: 150ms ease;
+  --swatch-atelier: #0A0A0A;
+  --swatch-courage: #C45C3E;
+  --swatch-minimal: #1A1C1E;
+  --swatch-hl: #067F8A;
+  --swatch-sqdl: #067F8A;
+  --swatch-blueprint: #111827;
+  --bg: #F5F5F0;
+  --bg-alt: #EBEBEB;
+  --surface: #FFFFFF;
+  --card: #FFFFFF;
+  --text: #0A0A0A;
+  --text-muted: #6A6A6A;
+  --muted: #6A6A6A;
+  --ink: #0A0A0A;
+  --border: #0A0A0A;
+  --border-light: #D0D0C8;
+  --accent: #067F8A;
+  --accent-soft: #C8EAED;
+  --accent-light: #E8F6F7;
+  --done: #166534;
+  --done-bg: #DCFCE7;
+  --badge-draft: #7A7A7A;
+  --badge-review: #067F8A;
+  --badge-complete: #166534;
+  --status-draft-bg: #F0EDED;
+  --status-draft: #7A7A7A;
+  --status-review-bg: #C8EAED;
+  --status-review: #067F8A;
+  --status-complete-bg: #DCFCE7;
+  --status-complete: #166534;
+  --status-in-progress-bg: #FEF3C7;
+  --status-in-progress: #B45309;
+  --status-launched-bg: #DBEAFE;
+  --status-launched: #1D4ED8;
+  --tag-builders-bg: #DBEAFE;
+  --tag-builders: #1D4ED8;
+  --tag-builders-text: #1D4ED8;
+  --tag-operators-bg: #EDE9FE;
+  --tag-operators: #6D28D9;
+  --tag-operators-text: #6D28D9;
+  --tag-learners-bg: #FEF9C3;
+  --tag-learners: #854D0E;
+  --tag-learners-text: #854D0E;
+  --beachhead-bg: #FEF08A;
+  --beachhead: #713F12;
+  --selection-bg: #FEF08A;
+  --selection-fg: #422006;
+  --shadow: none;
+  --revenue-paid: var(--done);
+  --revenue-paid-bg: var(--done-bg);
+  --revenue-invoiced: var(--accent);
+  --revenue-invoiced-bg: var(--accent-soft);
+  --revenue-estimated: var(--status-in-progress);
+  --revenue-estimated-bg: var(--status-in-progress-bg);
+  --invoice-paid: var(--done);
+  --invoice-paid-bg: var(--done-bg);
+  --invoice-issued: var(--accent);
+  --invoice-issued-bg: var(--accent-soft);
+  --invoice-overdue: #DC2626;
+  --invoice-overdue-bg: #FEE2E2;
+  --invoice-draft: var(--status-draft);
+  --invoice-draft-bg: var(--status-draft-bg);
+  --timeline-today: #DC2626;
+  --timeline-vacation: color-mix(in srgb, var(--status-in-progress-bg) 35%, transparent);
+}
+
+[data-palette="blueprint"] {
+  --bg: #F3F4F6;
+  --bg-alt: #E5E7EB;
+  --surface: #FFFFFF;
+  --card: #FFFFFF;
+  --text: #111827;
+  --text-muted: #9CA3AF;
+  --muted: #6B7280;
+  --ink: #111827;
+  --border: #111827;
+  --border-light: #E5E7EB;
+  --accent: #111827;
+  --accent-soft: #F3F4F6;
+  --accent-light: #FAFAFA;
+  --done: #111827;
+  --done-bg: #F3F4F6;
+  --badge-draft: #9CA3AF;
+  --badge-review: #6B7280;
+  --badge-complete: #111827;
+  --status-draft-bg: #F3F4F6;
+  --status-draft: #9CA3AF;
+  --status-review-bg: #E5E7EB;
+  --status-review: #6B7280;
+  --status-complete-bg: #F3F4F6;
+  --status-complete: #111827;
+  --status-in-progress-bg: #FFFBEB;
+  --status-in-progress: #B45309;
+  --status-launched-bg: #EEF2FF;
+  --status-launched: #3730A3;
+  --tag-builders-bg: #F3F4F6;
+  --tag-builders: #374151;
+  --tag-builders-text: #374151;
+  --tag-operators-bg: #F3F4F6;
+  --tag-operators: #6B7280;
+  --tag-operators-text: #6B7280;
+  --tag-learners-bg: #F3F4F6;
+  --tag-learners: #4B5563;
+  --tag-learners-text: #4B5563;
+  --beachhead-bg: #F3F4F6;
+  --beachhead: #6B7280;
+  --shadow: none;
+  --radius: 0px;
+}
+
+[data-palette="courage"] {
+  --accent: #C45C3E;
+  --accent-soft: #E8D5D0;
+  --accent-light: #F5E6E0;
+  --badge-review: #C45C3E;
+  --status-review-bg: #F5E6E0;
+  --status-review: #C45C3E;
+  --status-in-progress-bg: #FEF9C3;
+  --status-in-progress: #A16207;
+  --status-launched-bg: #E8D5D0;
+  --status-launched: #9A3412;
+  --tag-builders-bg: #DBEAFE;
+  --tag-builders: #1E40AF;
+  --tag-builders-text: #1E40AF;
+  --tag-operators-bg: #F3E8FF;
+  --tag-operators: #7C3AED;
+  --tag-operators-text: #7C3AED;
+  --tag-learners-bg: #FEF9C3;
+  --tag-learners: #854D0E;
+  --tag-learners-text: #854D0E;
+  --beachhead-bg: #FEF08A;
+  --beachhead: #713F12;
+}
+
+[data-palette="minimal"] {
+  --bg: #FFFFFF;
+  --bg-alt: #FAFAFA;
+  --surface: #FFFFFF;
+  --card: #FFFFFF;
+  --text: #111111;
+  --text-muted: #666666;
+  --muted: #666666;
+  --ink: #111111;
+  --border: #D4D4D4;
+  --border-light: #E5E5E5;
+  --accent: #111111;
+  --accent-soft: #F5F5F5;
+  --accent-light: #FAFAFA;
+  --done: #111111;
+  --done-bg: #F5F5F5;
+  --badge-draft: #888888;
+  --badge-review: #555555;
+  --badge-complete: #111111;
+  --status-draft-bg: #F5F5F5;
+  --status-draft: #888888;
+  --status-review-bg: #F0F0F0;
+  --status-review: #555555;
+  --status-complete-bg: #F5F5F5;
+  --status-complete: #111111;
+  --status-in-progress-bg: #FEFCE8;
+  --status-in-progress: #CA8A04;
+  --status-launched-bg: #F0F0F0;
+  --status-launched: #1E40AF;
+  --tag-builders-bg: #F0F0F0;
+  --tag-builders: #333333;
+  --tag-builders-text: #333333;
+  --tag-operators-bg: #F0F0F0;
+  --tag-operators: #555555;
+  --tag-operators-text: #555555;
+  --tag-learners-bg: #F0F0F0;
+  --tag-learners: #444444;
+  --tag-learners-text: #444444;
+  --beachhead-bg: #F5F5F5;
+  --beachhead: #666666;
+  --shadow: none;
+}
+
+[data-palette="hl"],
+[data-palette="sqdl"] {
+  --bg: #F5F5F0;
+  --bg-alt: #EBEBEB;
+  --surface: #FFFFFF;
+  --card: #FFFFFF;
+  --text: #0A0A0A;
+  --text-muted: #6A6A6A;
+  --muted: #6A6A6A;
+  --ink: #0A0A0A;
+  --border: #0A0A0A;
+  --border-light: #D0D0C8;
+  --accent: #067F8A;
+  --accent-soft: #C8EAED;
+  --accent-light: #E8F6F7;
+  --done: #166534;
+  --done-bg: #DCFCE7;
+  --badge-draft: #7A7A7A;
+  --badge-review: #067F8A;
+  --badge-complete: #166534;
+  --status-draft-bg: #F0EDED;
+  --status-draft: #7A7A7A;
+  --status-review-bg: #C8EAED;
+  --status-review: #067F8A;
+  --status-complete-bg: #DCFCE7;
+  --status-complete: #166534;
+  --status-in-progress-bg: #FEF3C7;
+  --status-in-progress: #B45309;
+  --status-launched-bg: #DBEAFE;
+  --status-launched: #1D4ED8;
+  --tag-builders-bg: #DBEAFE;
+  --tag-builders: #1D4ED8;
+  --tag-builders-text: #1D4ED8;
+  --tag-operators-bg: #EDE9FE;
+  --tag-operators: #6D28D9;
+  --tag-operators-text: #6D28D9;
+  --tag-learners-bg: #FEF9C3;
+  --tag-learners: #854D0E;
+  --tag-learners-text: #854D0E;
+  --beachhead-bg: #FEF08A;
+  --beachhead: #713F12;
+  --shadow: none;
+}
+
+[data-mode="dark"],
+[data-theme="dark"] {
+  --bg: #121212;
+  --bg-alt: #1A1A1A;
+  --surface: #1E1E22;
+  --card: #1E1E22;
+  --text: #E6E6E0;
+  --text-muted: #94948C;
+  --muted: #94948C;
+  --ink: #E6E6E0;
+  --border: #4D4D49;
+  --border-light: #2E2E2C;
+  --accent: #2ABFCC;
+  --accent-soft: #0D3D40;
+  --accent-light: #082A2D;
+  --done: #4ADE80;
+  --done-bg: #052E16;
+  --badge-draft: #D0D0C8;
+  --badge-review: #2ABFCC;
+  --badge-complete: #4ADE80;
+  --status-draft-bg: #1E1E1C;
+  --status-draft: #8A8A80;
+  --status-review-bg: #0D3D40;
+  --status-review: #2ABFCC;
+  --status-complete-bg: #052E16;
+  --status-complete: #4ADE80;
+  --status-in-progress-bg: #422006;
+  --status-in-progress: #FDE68A;
+  --status-launched-bg: #1E3A5F;
+  --status-launched: #93C5FD;
+  --tag-builders-bg: #1E3A5F;
+  --tag-builders: #93C5FD;
+  --tag-builders-text: #93C5FD;
+  --tag-operators-bg: #2E1065;
+  --tag-operators: #C4B5FD;
+  --tag-operators-text: #C4B5FD;
+  --tag-learners-bg: #3D2400;
+  --tag-learners: #FDE68A;
+  --tag-learners-text: #FDE68A;
+  --beachhead-bg: #422006;
+  --beachhead: #FDE68A;
+  --selection-bg: #FACC15;
+  --selection-fg: #121212;
+  --shadow: none;
+  --invoice-overdue: #F87171;
+  --invoice-overdue-bg: #450A0A;
+  --timeline-today: #F87171;
+}
+
+[data-palette="blueprint"][data-mode="dark"],
+[data-palette="blueprint"][data-theme="dark"] {
+  --bg: #111827;
+  --bg-alt: #1F2937;
+  --surface: #1F2937;
+  --card: #1F2937;
+  --text: #F3F4F6;
+  --text-muted: #6B7280;
+  --muted: #9CA3AF;
+  --ink: #F3F4F6;
+  --border: #F3F4F6;
+  --border-light: #374151;
+  --accent: #F3F4F6;
+  --accent-soft: #374151;
+  --accent-light: #1F2937;
+  --done: #F3F4F6;
+  --done-bg: #374151;
+  --badge-draft: #6B7280;
+  --badge-review: #9CA3AF;
+  --badge-complete: #F3F4F6;
+  --status-draft-bg: #374151;
+  --status-draft: #6B7280;
+  --status-review-bg: #374151;
+  --status-review: #9CA3AF;
+  --status-complete-bg: #374151;
+  --status-complete: #F3F4F6;
+  --status-in-progress-bg: #422006;
+  --status-in-progress: #FBBF24;
+  --status-launched-bg: #312E81;
+  --status-launched: #C7D2FE;
+  --tag-builders-bg: #374151;
+  --tag-builders: #D1D5DB;
+  --tag-builders-text: #D1D5DB;
+  --tag-operators-bg: #374151;
+  --tag-operators: #9CA3AF;
+  --tag-operators-text: #9CA3AF;
+  --tag-learners-bg: #374151;
+  --tag-learners: #FDE68A;
+  --tag-learners-text: #FDE68A;
+  --beachhead-bg: #374151;
+  --beachhead: #9CA3AF;
+  --shadow: none;
+}
+
+[data-palette="courage"][data-mode="dark"],
+[data-palette="courage"][data-theme="dark"] {
+  --bg: #1C1614;
+  --bg-alt: #2A211D;
+  --surface: #382C26;
+  --card: #382C26;
+  --text: #F0E6E0;
+  --text-muted: #BFA99A;
+  --muted: #BFA99A;
+  --ink: #F0E6E0;
+  --border: #F0E6E0;
+  --border-light: #382C26;
+  --accent: #E07A5C;
+  --accent-soft: #5C4038;
+  --accent-light: #4A3028;
+  --done: #4ADE80;
+  --done-bg: #052E16;
+  --badge-draft: #D6D3D1;
+  --badge-review: #E07A5C;
+  --badge-complete: #4ADE80;
+  --status-review-bg: #5C4038;
+  --status-review: #E07A5C;
+  --status-in-progress-bg: #3D2400;
+  --status-in-progress: #FDE68A;
+  --status-launched-bg: #5C4038;
+  --status-launched: #FDBA74;
+  --tag-builders-bg: #1E3A5F;
+  --tag-builders: #93C5FD;
+  --tag-builders-text: #93C5FD;
+  --tag-operators-bg: #2E1065;
+  --tag-operators: #C4B5FD;
+  --tag-operators-text: #C4B5FD;
+  --tag-learners-bg: #3D2400;
+  --tag-learners: #FDE68A;
+  --tag-learners-text: #FDE68A;
+  --beachhead-bg: #422006;
+  --beachhead: #FDE68A;
+  --shadow: none;
+}
+
+[data-palette="minimal"][data-mode="dark"],
+[data-palette="minimal"][data-theme="dark"] {
+  --bg: #121212;
+  --bg-alt: #1A1A1A;
+  --surface: #1E1E22;
+  --card: #1E1E22;
+  --text: #E6E6E0;
+  --text-muted: #949494;
+  --muted: #949494;
+  --ink: #E6E6E0;
+  --border: #5A5A5A;
+  --border-light: #2A2A2A;
+  --accent: #EEEEEE;
+  --accent-soft: #222222;
+  --accent-light: #1A1A1A;
+  --done: #EEEEEE;
+  --done-bg: #222222;
+  --badge-draft: #888888;
+  --badge-review: #BBBBBB;
+  --badge-complete: #EEEEEE;
+  --status-draft-bg: #222222;
+  --status-draft: #888888;
+  --status-review-bg: #262626;
+  --status-review: #BBBBBB;
+  --status-complete-bg: #222222;
+  --status-complete: #EEEEEE;
+  --status-in-progress-bg: #422006;
+  --status-in-progress: #FBBF24;
+  --status-launched-bg: #1E3A5F;
+  --status-launched: #93C5FD;
+  --tag-builders-bg: #262626;
+  --tag-builders: #D4D4D4;
+  --tag-builders-text: #D4D4D4;
+  --tag-operators-bg: #262626;
+  --tag-operators: #BBBBBB;
+  --tag-operators-text: #BBBBBB;
+  --tag-learners-bg: #262626;
+  --tag-learners: #FDE68A;
+  --tag-learners-text: #FDE68A;
+  --beachhead-bg: #2A2A2A;
+  --beachhead: #AAAAAA;
+  --shadow: none;
+}
+
+[data-palette="hl"][data-mode="dark"],
+[data-palette="hl"][data-theme="dark"],
+[data-palette="sqdl"][data-mode="dark"],
+[data-palette="sqdl"][data-theme="dark"] {
+  --bg: #121212;
+  --bg-alt: #1A1A1A;
+  --surface: #1E1E22;
+  --card: #1E1E22;
+  --text: #E6E6E0;
+  --text-muted: #94948C;
+  --muted: #94948C;
+  --ink: #E6E6E0;
+  --border: #4D4D49;
+  --border-light: #2E2E2C;
+  --accent: #2ABFCC;
+  --accent-soft: #0D3D40;
+  --accent-light: #082A2D;
+  --done: #4ADE80;
+  --done-bg: #052E16;
+  --badge-draft: #D0D0C8;
+  --badge-review: #2ABFCC;
+  --badge-complete: #4ADE80;
+  --status-draft-bg: #1E1E1C;
+  --status-draft: #8A8A80;
+  --status-review-bg: #0D3D40;
+  --status-review: #2ABFCC;
+  --status-complete-bg: #052E16;
+  --status-complete: #4ADE80;
+  --status-in-progress-bg: #422006;
+  --status-in-progress: #FDE68A;
+  --status-launched-bg: #1E3A5F;
+  --status-launched: #93C5FD;
+  --tag-builders-bg: #1E3A5F;
+  --tag-builders: #93C5FD;
+  --tag-builders-text: #93C5FD;
+  --tag-operators-bg: #2E1065;
+  --tag-operators: #C4B5FD;
+  --tag-operators-text: #C4B5FD;
+  --tag-learners-bg: #3D2400;
+  --tag-learners: #FDE68A;
+  --tag-learners-text: #FDE68A;
+  --beachhead-bg: #422006;
+  --beachhead: #FDE68A;
+  --shadow: none;
+}
